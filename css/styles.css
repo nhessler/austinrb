@@ -341,3 +341,18 @@ footer {
   text-align: center;
   font-weight: 700;
 }
+
+#speakers-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#speakers-content h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
