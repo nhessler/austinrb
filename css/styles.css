@@ -1,0 +1,98 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & base typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.75rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d9534f; /* A Ruby-ish color for hover */
+}
+
+/* Container for sidebar + content */
+.container {
+  display: flex;
+  margin: 1em;
+  gap: 1em;
+}
+
+/* Sidebar styling */
+.sidebar {
+  flex: 0 0 250px; /* fixed width for the sidebar */
+  padding: 1em;
+  background-color: #fafafa;
+  border-right: 1px solid #eee;
+}
+
+.sidebar section {
+  margin-bottom: 2em;
+}
+
+.sidebar h2,
+.sidebar h3 {
+  margin-bottom: 0.5em;
+}
+
+.sidebar p,
+.sidebar li,
+.sidebar a {
+  font-size: 0.95rem;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: 1em;
+}
+
+.content section {
+  margin-bottom: 2em;
+}
+
+.content h2 {
+  margin-bottom: 0.5em;
+  color: #d9534f; /* Emphasize headings in main content area */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 1em;
+  border-top: 1px solid #ccc;
+  margin-top: 2em;
+  font-size: 0.9rem;
+  color: #666;
+}
