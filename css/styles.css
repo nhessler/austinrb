@@ -15,30 +15,32 @@ body {
 
 /* Header */
 header {
-  background-color: #f2f2f2;
-  padding: 1em;
-  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
 }
 
 header h1 {
-  margin: 0 0 0.5em 0;
-  font-size: 1.75rem;
+  margin: 0;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
 }
 
 nav a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
 }
 
 nav a:hover {
-  color: #d9534f; /* A Ruby-ish color for hover */
+  color: #666;
 }
 
 /* Container for sidebar + content */
