@@ -5,9 +5,11 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 /* Body & base typography */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   color: #333;
   background-color: #fff;
@@ -27,11 +29,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 header h1 {
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #c12d2f;
 }
 
 nav ul {
@@ -96,7 +101,7 @@ footer {
 
 /* Purpose Statement */
 #purpose-statement {
-  background-color: #ffd6cc; /* salmon/peach background */
+  background-color: #ffd6d6; /* salmon/peach background */
   padding: 3rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -104,10 +109,11 @@ footer {
 }
 
 #purpose-statement p {
-  color: #8b0000; /* dark red */
-  font-size: 1.8rem;
+  color: #c12d2f; /* red text */
+  font-size: 2.7rem;
   line-height: 1.6;
-  font-weight: 600;
+  font-weight: 700;
+  font-style: italic;
   max-width: 800px;
   margin: 0;
 }
@@ -122,6 +128,7 @@ footer {
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .sponsors-list {
@@ -187,6 +194,7 @@ footer {
   color: #333;
   font-size: 1.1rem;
   line-height: 1.4;
+  font-weight: 700;
 }
 
 .sponsor-info span {
@@ -264,6 +272,7 @@ footer {
   margin-top: 0;
   color: #333;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .event-type h4 {
