@@ -129,3 +129,21 @@ footer {
     border-top: 1px solid #eee;
   }
 }
+
+/* Purpose Statement */
+#purpose-statement {
+  background-color: #ffd6cc; /* salmon/peach background */
+  padding: 3rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+#purpose-statement p {
+  color: #8b0000; /* dark red */
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0;
+}
