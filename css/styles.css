@@ -39,6 +39,11 @@ header h1 {
   color: #c12d2f;
 }
 
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -110,7 +115,7 @@ footer {
 
 #purpose-statement p {
   color: #c12d2f; /* red text */
-  font-size: 2.7rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   font-weight: 700;
   font-style: italic;
