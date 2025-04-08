@@ -57,6 +57,15 @@ nav a {
   color: #333;
 }
 
+nav a.community-link {
+  color: #c12d2f;
+  font-weight: bold;
+}
+
+nav a.community-link:hover {
+  color: #e13537;
+}
+
 nav a:hover {
   color: #666;
 }
