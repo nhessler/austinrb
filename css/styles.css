@@ -1,3 +1,16 @@
+/* CSS Variables */
+:root {
+  --red: #c12d2f;
+  --red-bright: red;
+  --salmon: #ffd6d6;
+  --white: #fff;
+  --black: #333;
+  --black-bright: #666;
+  --gray-dark: #ccc;
+  --gray: #f0f0f0;
+  --gray-light: #fafafa;
+}
+
 /* Basic resets */
 * {
   margin: 0;
@@ -11,8 +24,8 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
-  color: #333;
-  background-color: #fff;
+  color: var(--black);
+  background-color: var(--white);
   padding: 0 1rem;
 }
 
@@ -29,14 +42,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 header h1 {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  color: #c12d2f;
+  color: var(--red);
 }
 
 .header-logo {
@@ -54,20 +67,20 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: var(--black);
 }
 
 nav a.community-link {
-  color: #c12d2f;
+  color: var(--red);
   font-weight: bold;
 }
 
 nav a.community-link:hover {
-  color: #e13537;
+  color: var(--red-bright);
 }
 
 nav a:hover {
-  color: #666;
+  color: var(--black-bright);
 }
 
 /* Container for content */
@@ -84,19 +97,19 @@ nav a:hover {
 #calendar {
   margin-top: 2rem;
   padding: 1rem;
-  background-color: #fafafa;
+  background-color: var(--gray-light);
   border-radius: 8px;
 }
 
 #calendar iframe {
   width: 100%;
   height: 450px;
-  border: 1px solid #bfcbda88;
+  border: 1px solid var(--gray-dark);
   border-radius: 4px;
 }
 
 #calendar h2 {
-  color: #333;
+  color: var(--black);
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
@@ -106,12 +119,12 @@ nav a:hover {
 /* Footer */
 footer {
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: var(--gray-light);
   padding: 1em;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--gray-dark);
   margin-top: 2em;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--black);
 }
 
 /* Make the layout responsive */
@@ -123,7 +136,7 @@ footer {
 
 /* Purpose Statement */
 #purpose-statement {
-  background-color: #ffd6d6; /* salmon/peach background */
+  background-color: var(--salmon);
   padding: 3rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -131,7 +144,7 @@ footer {
 }
 
 #purpose-statement p {
-  color: #c12d2f; /* red text */
+  color: var(--red); /* red text */
   font-size: 1.8rem;
   line-height: 1.6;
   font-weight: 700;
@@ -146,7 +159,7 @@ footer {
 }
 
 #sponsors h2 {
-  color: #333;
+  color: var(--black);
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
@@ -165,7 +178,7 @@ footer {
   align-items: center;
   gap: 1.5rem;
   padding: 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--gray-light);
   border-radius: 8px;
   flex: 0 1 calc(25% - 2rem);
   min-width: 250px;
@@ -173,13 +186,13 @@ footer {
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--gray-dark);
 }
 
 .sponsor:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f0f0f0;
+  background-color: var(--gray);
 }
 
 .sponsor-logo {
@@ -188,7 +201,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 8px;
   padding: 0.75rem;
   flex-shrink: 0;
@@ -196,7 +209,7 @@ footer {
 }
 
 .sponsor-logo.black-bg {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .sponsor-logo img {
@@ -213,24 +226,10 @@ footer {
 
 .sponsor-info h3 {
   margin: 0;
-  color: #333;
+  color: var(--black);
   font-size: 1.1rem;
   line-height: 1.4;
   font-weight: 700;
-}
-
-.sponsor-info span {
-  color: #8b0000;
-  font-size: 0.9rem;
-}
-
-.sponsor-info a {
-  color: #8b0000;
-  text-decoration: none;
-}
-
-.sponsor-info a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -291,13 +290,13 @@ footer {
 
 .event-type h3 {
   margin-top: 0;
-  color: #333;
+  color: var(--black);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
 .event-type h4 {
-  color: #666;
+  color: var(--black-bright);
   font-size: 1rem;
   font-weight: normal;
   margin: 0 0 1rem 0;
@@ -306,12 +305,12 @@ footer {
 
 .event-type p {
   margin-bottom: 0;
-  color: #666;
+  color: var(--black);
 }
 
 .event-type-separator {
   width: 1px;
-  background-color: #ddd;
+  background-color: var(--gray-dark);
   margin: 0 1rem;
 }
 
@@ -323,7 +322,7 @@ footer {
 .return-home-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #c12d2f;
+  background-color: var(--red);
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -332,7 +331,7 @@ footer {
 }
 
 .return-home-button:hover {
-  background-color: #a02527;
+  background-color: var(--red-bright);
 }
 
 #sponsors-content {
@@ -343,7 +342,7 @@ footer {
 }
 
 #sponsors-content h2 {
-  color: #333;
+  color: var(--black);
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
@@ -358,7 +357,7 @@ footer {
 }
 
 #speakers-content h2 {
-  color: #333;
+  color: var(--black);
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: center;
