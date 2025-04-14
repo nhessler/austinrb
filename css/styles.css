@@ -74,16 +74,16 @@ nav a {
   color: var(--black);
 }
 
-nav a.community-link {
+.header-community .community-link {
   color: var(--white);
   font-weight: bold;
   background-color: var(--red);
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.2s ease;
+  text-decoration: none;
 }
 
-nav a.community-link:hover {
+.header-community .community-link:hover {
   background-color: var(--red-bright);
   color: var(--white);
 }
