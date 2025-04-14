@@ -300,6 +300,10 @@ footer {
   margin-top: 2rem;
 }
 
+.event-types-mobile-heading {
+  display: none;
+}
+
 .event-type-column {
   flex: 1;
   display: flex;
@@ -424,6 +428,15 @@ footer {
   }
 
   .event-type {
+    margin-bottom: 1rem;
+  }
+
+  .event-types-mobile-heading {
+    display: block;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 }
