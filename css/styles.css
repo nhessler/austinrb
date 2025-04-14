@@ -106,6 +106,23 @@ nav a:hover {
   color: var(--black-bright);
 }
 
+@media (max-width: 840px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-top {
+    width: 100%;
+  }
+
+  .header-community {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* Container for content */
 .container {
   margin: 1em 0;
