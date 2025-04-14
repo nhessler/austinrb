@@ -106,6 +106,10 @@ nav a {
   color: var(--black);
 }
 
+.mobile-only {
+  display: none;
+}
+
 .header-community .community-link {
   color: var(--white);
   font-weight: bold;
@@ -438,6 +442,10 @@ footer {
     text-align: center;
     font-weight: 700;
     margin-bottom: 1rem;
+  }
+
+  .mobile-only {
+    display: block;
   }
 }
 
