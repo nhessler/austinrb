@@ -454,19 +454,15 @@ footer {
   margin: 3rem 0;
 }
 
-.return-home-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: var(--red);
-  color: white;
+.return-home-link {
+  color: var(--black);
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: 700;
-  transition: background-color 0.2s ease;
+  font-weight: 500;
 }
 
-.return-home-button:hover {
-  background-color: var(--red-bright);
+.return-home-link:hover {
+  color: var(--black-bright);
+  text-decoration: underline;
 }
 
 #sponsors-content {
@@ -485,16 +481,63 @@ footer {
 }
 
 #speakers-content {
-  max-width: 800px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  background-color: var(--gray-light);
+  border-radius: 8px;
+  margin: 2rem 0;
 }
 
 #speakers-content h2 {
   color: var(--black);
   margin-bottom: 2rem;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
+}
+
+#speakers-content p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+#speakers-content ul {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+#speakers-content li {
+  margin-bottom: 0.5rem;
+}
+
+#speakers-content a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+#speakers-content a:hover {
+  color: var(--red-bright);
+  text-decoration: underline;
+}
+
+#speakers-content .speaker-form-button {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#speakers-content .speaker-form-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--red);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+
+#speakers-content .speaker-form-link:hover {
+  background-color: var(--red-bright);
+  color: var(--white);
 }
